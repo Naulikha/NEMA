@@ -1,0 +1,93 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<h1>Services</h1>
+
+<section class="services">
+    <h1>Our Duty</h1>
+    <P>The people making the world a better place to be</P>
+
+    <div class="row">
+        <div class="services-col">
+            <h3>Water Quality Management</h3>
+            <p>Water quality management is a commonly used and somewhat vague expression referring to the (systematic) usage of a set of technical and non-technical measures and activities, to maintain or improve quality according to the requirements of water uses and to "protect" ecosystems.</p>
+        </div>
+            <div class="services-col">
+                <h3>Solid Waste Management</h3>
+                <p>solid waste management mainly refers to the complete process of collecting, treating and disposing of solid wastes. In the waste management process, the wastes are collected from different sources and are disposed of. This process includes collection, transportation, treatment, analysis and disposal of waste.</p>
+            </div>
+                <div class="services-col">
+                    <h3>Air Quality Management</h3>
+                    <p>Air quality management refers to all the activities a regulatory authority undertakes to help protect human health and the environment from the harmful effects of air pollution. The process of managing air quality can be illustrated as a cycle of inter-related elements.</p>
+        </div>
+    </div>
+
+ </section>
+
+
+ <!-----------OUR Environment---------->
+ <section class="Environment">
+    <h1>Our Environment</h1>
+    <p>If we don't take care of our home who will?</p>
+    <div class="row">
+        <div class="Environment-col">
+            <img src="Images/lake-victoria-4.avif">
+            <h3>Water Bodies</h3>
+            <p>We have beautiful Lakes, Rivers and an Ocean which are not safe from water pollution from factories etc. (picture of Lake Victoria)</p>
+        </div>
+        <div class="Environment-col">
+            <img src="Images/karura.png">
+            <h3>Vegetation</h3>
+            <p>We have beautiful growing forests that cover a big portion of our country that are not sfe from deforestation. (picture of Karura forest)</p>
+        </div>
+        <div class="Environment-col">
+            <img src="Images/cc.jpg">
+            <h3>Cities</h3>
+            <p>We have beautiful Towns, that are sadly ridled with all forms of pollution . (picture of Nairobi CBD)</p>
+        </div>
+    </div>
+
+
+
+
+ </section>
+  
+
+
+    <!-------footer-->
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>The National Environment Management Authority (NEMA) is established under the Environmental Management and Coordination Act (EMCA) No. 8 of 1999, as the principal instrument of government in the implementation of all policies relating to the environment.
+           The Authority became operational on 1st July 2002 following the merger of three government departments, namely: the National Environment Secretariat (NES), the Permanent Presidential Commission on Soil Conservation and Afforestation (PPCSCA), and the Department of Resource Surveys and Remote Sensing (DRSRS). However, following government restructuring in March 2003, DRSRS reverted to its departmental status under the then Ministry of Environment and Natural Resources (MENR).</p>
+           <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        </section>
+
+
+
+
+
+
+
+
+<!------------------Javascript forr Toggle Menu---------->
+<script>
+
+var navLinks = document.getElementById("navLinks");
+
+function showMenu(){
+    navLinks.style.right ="0";
+}
+function hideMenu(){
+    navLinks.style.right = "-200px";
+}
+</script>
+
+
+{% endblock body %}
