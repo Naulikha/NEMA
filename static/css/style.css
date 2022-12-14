@@ -6,7 +6,7 @@
 .header{
     min-height: 100vh;
     width: 100%;
-    background-image:linear-gradient(rgba(4, 9, 30, 0.7),rgba(4, 9, 30, 0.7)),url(Images/Opera\ Snapshot_2022-11-03_000528_www.google.com.png) ;
+    background-image:linear-gradient(rgba(4, 9, 30, 0.7),rgba(4, 9, 30, 0.7)),url({% static 'img/Opera\ Snapshot_2022-11-03_000528_www.google.com.png' %}) ;
     background-position: center;
     background-size: cover;
     position: relative;
@@ -277,7 +277,7 @@ NEMA-col img{
 .contact{
     margin: 100px auto;
     width: 80%;
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/images.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url({% static 'img/images.jpg' %});
     background-position: center;
     background-size: cover;
     border-radius: 10px;
@@ -313,7 +313,7 @@ NEMA-col img{
 .sub-header{
     height: 80vh;
     width: 100%;
-    background-image: linear-gradient(rgba(24, 14, 66, 0.7),rgba(16, 29, 83, 0.7)),url(Images/Nema-Kenya-1320x880.jpg);
+    background-image: linear-gradient(rgba(24, 14, 66, 0.7),rgba(16, 29, 83, 0.7)),url({% static 'img/Nema-Kenya-1320x880.jpg' %});
     background-position: center;
     background-size: cover;
     text-align: center;

@@ -1,150 +1,190 @@
-{% extends 'base.html' %}
-
-{% block body %}
+{% extends 'base.html' %} {% block body %}
 
 <h1>Home</h1>
 
 <section class="services">
-    <h1>Our Services</h1>
-    <P>The people making the world a better place to be</P>
+  <h1>Our Services</h1>
+  <p>The people making the world a better place to be</p>
 
-    <div class="row">
-        <div class="services-col">
-            <h3>Water Quality Management</h3>
-            <p>Water quality management is a commonly used and somewhat vague expression referring to the (systematic) usage of a set of technical and non-technical measures and activities, to maintain or improve quality according to the requirements of water uses and to "protect" ecosystems.</p>
-        </div>
-            <div class="services-col">
-                <h3>Solid Waste Management</h3>
-                <p>solid waste management mainly refers to the complete process of collecting, treating and disposing of solid wastes. In the waste management process, the wastes are collected from different sources and are disposed of. This process includes collection, transportation, treatment, analysis and disposal of waste.</p>
-            </div>
-                <div class="services-col">
-                    <h3>Air Quality Management</h3>
-                    <p>Air quality management refers to all the activities a regulatory authority undertakes to help protect human health and the environment from the harmful effects of air pollution. The process of managing air quality can be illustrated as a cycle of inter-related elements.</p>
-        </div>
+  <div class="row">
+    <div class="services-col">
+      <h3>Water Quality Management</h3>
+      <p>
+        Water quality management is a commonly used and somewhat vague
+        expression referring to the (systematic) usage of a set of technical and
+        non-technical measures and activities, to maintain or improve quality
+        according to the requirements of water uses and to "protect" ecosystems.
+      </p>
     </div>
-
- </section>
-
- <!--------NEMA--------->
-
- <section class="NEMA">
-    <h12>Our Worldwide Locations</h12>
-    <p>What is the Environment? An Environment is everything that is around us, which includes both living and nonliving things such as soil, water, animals and plants, which adapt themselves to their surroundings.</p>
-
-    <div class="row">
-        <div class="NEMA-col">
-            <img src="Images/An image of NEMA offices in Nairobi, Kenya..jpg">
-            <div class="Layer">
-                <h3>NAIROBI</h3>
-            </div>
-        </div>
-        <div class="NEMA-col">
-            <img src="Images/National Environmental Management Authority (NEMA) offices in Taita Taveta County.jpg">
-            <div class="Layer">
-                <h3>TAITA TAVETA</h3>
-            </div>
-        </div>
-        <div class="NEMA-col">
-            <img src="Images/Opera Snapshot_2022-11-03_000746_www.google.com.png">
-            <div class="Layer">
-                <h3>MACHAKOS</h3>
-            </div>
-        </div>
+    <div class="services-col">
+      <h3>Solid Waste Management</h3>
+      <p>
+        solid waste management mainly refers to the complete process of
+        collecting, treating and disposing of solid wastes. In the waste
+        management process, the wastes are collected from different sources and
+        are disposed of. This process includes collection, transportation,
+        treatment, analysis and disposal of waste.
+      </p>
     </div>
- </section>
+    <div class="services-col">
+      <h3>Air Quality Management</h3>
+      <p>
+        Air quality management refers to all the activities a regulatory
+        authority undertakes to help protect human health and the environment
+        from the harmful effects of air pollution. The process of managing air
+        quality can be illustrated as a cycle of inter-related elements.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!--------NEMA--------->
+
+<section class="NEMA">
+  <h12>Our Worldwide Locations</h12>
+  <p>
+    What is the Environment? An Environment is everything that is around us,
+    which includes both living and nonliving things such as soil, water, animals
+    and plants, which adapt themselves to their surroundings.
+  </p>
+
+  <div class="row">
+    <div class="NEMA-col">
+      <img
+        src="{% static 'img/An image of NEMA offices in Nairobi, Kenya..jpg' %}"
+      />
+      <div class="Layer">
+        <h3>NAIROBI</h3>
+      </div>
+    </div>
+    <div class="NEMA-col">
+      <img
+        src="{% static 'img/National Environmental Management Authority (NEMA) offices in Taita Taveta County.jpg' %}"
+      />
+      <div class="Layer">
+        <h3>TAITA TAVETA</h3>
+      </div>
+    </div>
+    <div class="NEMA-col">
+      <img
+        src="{% static 'img/Opera Snapshot_2022-11-03_000746_www.google.com.png' %}"
+      />
+      <div class="Layer">
+        <h3>MACHAKOS</h3>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!--------Quality Tomorrow--------->
 
 <section class="goals">
-            <h1>Our Goals</h1>
-            <p>The future of our environment lays in our hand</p>
-        <div class="row">
-            <div class="goals-col">
-                <img src="Images/Air quality.jpg">
-                <h3>Air Quality</h3>
-                <p>Lower levels of air pollution is good for everyones health both short and long term</p>
-            </div>
-            <div class="goals-col">
-                <img src="Images/image-fp175.jpg">
-                <h3>Water Quality</h3>
-                <p>Necessary for the survival of all living species, water plays a significant role in human life, from our health to the economy. By preserving and supporting good water quality we benefit the environment, public health, and the protection of water resources for future generations.</p>
-            </div>
-            <div class="goals-col">
-                <img src="Images/DSC_1461_resized.jpg">
-                <h3>A Cleaner Environment</h3>
-                <p>Keeping our environment clean involves minimizing environment-degrading acts and processes and taking initiatives aimed at eliminating dirt already discarded to the ecosystem.</p>
-            </div>
-        </div>
-
+  <h1>Our Goals</h1>
+  <p>The future of our environment lays in our hand</p>
+  <div class="row">
+    <div class="goals-col">
+      <img src="{% static 'img/Air quality.jpg' %}" />
+      <h3>Air Quality</h3>
+      <p>
+        Lower levels of air pollution is good for everyones health both short
+        and long term
+      </p>
+    </div>
+    <div class="goals-col">
+      <img src="{% static 'img/image-fp175.jpg' %}" />
+      <h3>Water Quality</h3>
+      <p>
+        Necessary for the survival of all living species, water plays a
+        significant role in human life, from our health to the economy. By
+        preserving and supporting good water quality we benefit the environment,
+        public health, and the protection of water resources for future
+        generations.
+      </p>
+    </div>
+    <div class="goals-col">
+      <img src="{% static 'img/DSC_1461_resized.jpg' %}" />
+      <h3>A Cleaner Environment</h3>
+      <p>
+        Keeping our environment clean involves minimizing environment-degrading
+        acts and processes and taking initiatives aimed at eliminating dirt
+        already discarded to the ecosystem.
+      </p>
+    </div>
+  </div>
 </section>
 
 <!------Motivational comments-->
 
 <section class="Quotes">
-    <h3>Quotes From Environmentalists</h3>
-                <p>This Is Our Home</p>
-    <div class="row">
-        <div class="Quotes-col">
-            <img src="Images/wangari-maathai-1.jpg">
-            <div>
-                
-            <p>You cannot protect the environment unless you empower people, you inform them, and you help them understand that these resources are their own, that they must protect them." </p>
-            <h3>Wangari Maathai.</h3>
-            </div>
-        </div><div class="Quotes-col">
-            <img src="Images/David_Suzuki.jpg">
-            <div>
-                
-            <p>If we polute the Air, Water and Soil that keeps us alive and well, and destroy the biodiversity that allows natural systems to function NO AMOUNT OF MONEY WILL SAVE US.</p>
-            <h3>David Suzuki.</h3>
-            </div>
-        </div>
-
+  <h3>Quotes From Environmentalists</h3>
+  <p>This Is Our Home</p>
+  <div class="row">
+    <div class="Quotes-col">
+      <img src="{% static 'img/wangari-maathai-1.jpg' %}" />
+      <div>
+        <p>
+          You cannot protect the environment unless you empower people, you
+          inform them, and you help them understand that these resources are
+          their own, that they must protect them."
+        </p>
+        <h3>Wangari Maathai.</h3>
+      </div>
     </div>
-
-
+    <div class="Quotes-col">
+      <img src="{% static 'img/David_Suzuki.jpg' %}" />
+      <div>
+        <p>
+          If we polute the Air, Water and Soil that keeps us alive and well, and
+          destroy the biodiversity that allows natural systems to function NO
+          AMOUNT OF MONEY WILL SAVE US.
+        </p>
+        <h3>David Suzuki.</h3>
+      </div>
+    </div>
+  </div>
 </section>
 
 <!--------Contact Us------>
 <section class="contact">
-    <H1>Incase of any Environmental Incident</H1>
-    <a href="" class="hero-btn">CONTACT US</a>
+  <h1>Incase of any Environmental Incident</h1>
+  <a href="" class="hero-btn">CONTACT US</a>
 </section>
 
 <!-------footer-->
 
 <section class="footer">
-    <h4>About Us</h4>
-    <p>The National Environment Management Authority (NEMA) is established under the Environmental Management and Coordination Act (EMCA) No. 8 of 1999, as the principal instrument of government in the implementation of all policies relating to the environment.
-       The Authority became operational on 1st July 2002 following the merger of three government departments, namely: the National Environment Secretariat (NES), the Permanent Presidential Commission on Soil Conservation and Afforestation (PPCSCA), and the Department of Resource Surveys and Remote Sensing (DRSRS). However, following government restructuring in March 2003, DRSRS reverted to its departmental status under the then Ministry of Environment and Natural Resources (MENR).</p>
-    <div class="icons">
-        <i class="fa fa-facebook"></i>
-        <i class="fa fa-instagram"></i>
-        <i class="fa fa-twitter"></i>
-        <i class="fa fa-linkedin"></i>
-    </div>
-    </section>
-
-
-
-
-
-
-
+  <h4>About Us</h4>
+  <p>
+    The National Environment Management Authority (NEMA) is established under
+    the Environmental Management and Coordination Act (EMCA) No. 8 of 1999, as
+    the principal instrument of government in the implementation of all policies
+    relating to the environment. The Authority became operational on 1st July
+    2002 following the merger of three government departments, namely: the
+    National Environment Secretariat (NES), the Permanent Presidential
+    Commission on Soil Conservation and Afforestation (PPCSCA), and the
+    Department of Resource Surveys and Remote Sensing (DRSRS). However,
+    following government restructuring in March 2003, DRSRS reverted to its
+    departmental status under the then Ministry of Environment and Natural
+    Resources (MENR).
+  </p>
+  <div class="icons">
+    <i class="fa fa-facebook"></i>
+    <i class="fa fa-instagram"></i>
+    <i class="fa fa-twitter"></i>
+    <i class="fa fa-linkedin"></i>
+  </div>
+</section>
 
 <!------------------Javascript forr Toggle Menu---------->
 <script>
+  var navLinks = document.getElementById("navLinks");
 
-var navLinks = document.getElementById("navLinks");
-
-function showMenu(){
-navLinks.style.right ="0";
-}
-function hideMenu(){
-navLinks.style.right = "-200px";
-}
+  function showMenu() {
+    navLinks.style.right = "0";
+  }
+  function hideMenu() {
+    navLinks.style.right = "-200px";
+  }
 </script>
-
-
 
 {% endblock body %}

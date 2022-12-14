@@ -1,98 +1,127 @@
-{% extends 'base.html' %}
-
-{% block body %}
+{% load_static %} {% extends 'base.html' %} {% block body %}
 
 <h1>Blog</h1>
 
-<section class="blog-content"> 
- 
-    <div class="row">
-        <div class="blog-left">
-            <img src="Images/DSC_1461_resized.jpg">
-            <h2>Our Ongoing Projects & Proposals for 2022</h2>
-            <p>The National Environment Management Authority of Kenya (NEMA) is a national entity located in Kenya, which was established in 2002 with the objectives of supervising and coordinating environmental activities and serving as the main national body to implement environmental policies in all sectors within the country.</p>
-            <br>
-            <p> In addition to its role as an environmental regulatory body, NEMA additionally implements its own projects. NEMA has vast experience in the field of climate change adaptation and mitigation, co-implementing projects ranging from US$ 10 million to US$ 255 million with local and international organizations.</p>
-            <br>
-            <p>Some of its past and current activities include building resilience to climate change and adaptive capacity of vulnerable communities, environmental management, coastal development, technical assistance and natural resource management.</p>
-            <br>
-            <p>With the accreditation to the GCF, NEMA intends to develop country priority projects in line with the Kenya 2030 vision, national strategies on climate response and green growth, and the Kenya’s climate change action plan. In particular, projects would be developed in the forestry, electricity, transportation, energy demand, agriculture and industrial processes sectors – six sectors identified as priorities based on their potential to mitigate greenhouse gas emissions by 2030. Accreditation to the GCF would allow NEMA to drive a paradigm shift towards low-emission and climate-resilient development pathways in its country.</p>
-        
-        
-            <div class="comment-box">
-                
-                <h3> Querries an Comments</h3>
-                
-                <form class="comment-form" method="post">
-                    {% csrf_token %}
-                    <input type="text" name="name" placeholder="Enter Name">
-                    <input type="email" name="email" placeholder="Enter email">
-                    <textarea rows="5" name="comment" placeholder="Your Comment/Querry"></textarea>
-                    <button type="submit" name="submit" class="hero-btn red-btn">SUBMIT</button>
-                </form>
-            </div>
-        
-        </div>
-        <div class="blog-right">
-            <h3>Project Categories</h3>
-            <div>
-                <span>Water Security</span>
-                <span>3</span>
-            </div>
-            <div>
-                <span>Forest Reservation</span>
-                <span>10</span>
-            </div>
-            <div>
-                <span>Climate Ressilience</span>
-                <span>2</span>
-            </div>
-            <div>
-                <span>Garbage Disposal</span>
-                <span>15</span>
-            </div>
-            <div>
-                <span>Food Security</span>
-                <span>12</span>
-            </div>
-        </div>
+<section class="blog-content">
+  <div class="row">
+    <div class="blog-left">
+      <img src="{% static 'img/DSC_1461_resized.jpg' %}" />
+      <h2>Our Ongoing Projects & Proposals for 2022</h2>
+      <p>
+        The National Environment Management Authority of Kenya (NEMA) is a
+        national entity located in Kenya, which was established in 2002 with the
+        objectives of supervising and coordinating environmental activities and
+        serving as the main national body to implement environmental policies in
+        all sectors within the country.
+      </p>
+      <br />
+      <p>
+        In addition to its role as an environmental regulatory body, NEMA
+        additionally implements its own projects. NEMA has vast experience in
+        the field of climate change adaptation and mitigation, co-implementing
+        projects ranging from US$ 10 million to US$ 255 million with local and
+        international organizations.
+      </p>
+      <br />
+      <p>
+        Some of its past and current activities include building resilience to
+        climate change and adaptive capacity of vulnerable communities,
+        environmental management, coastal development, technical assistance and
+        natural resource management.
+      </p>
+      <br />
+      <p>
+        With the accreditation to the GCF, NEMA intends to develop country
+        priority projects in line with the Kenya 2030 vision, national
+        strategies on climate response and green growth, and the Kenya’s climate
+        change action plan. In particular, projects would be developed in the
+        forestry, electricity, transportation, energy demand, agriculture and
+        industrial processes sectors – six sectors identified as priorities
+        based on their potential to mitigate greenhouse gas emissions by 2030.
+        Accreditation to the GCF would allow NEMA to drive a paradigm shift
+        towards low-emission and climate-resilient development pathways in its
+        country.
+      </p>
+
+      <div class="comment-box">
+        <h3>Querries an Comments</h3>
+
+        <form class="comment-form" method="post">
+          {% csrf_token %}
+          <input type="text" name="name" placeholder="Enter Name" />
+          <input type="email" name="email" placeholder="Enter email" />
+          <textarea
+            rows="5"
+            name="comment"
+            placeholder="Your Comment/Querry"
+          ></textarea>
+          <button type="submit" name="submit" class="hero-btn red-btn">
+            SUBMIT
+          </button>
+        </form>
+      </div>
     </div>
-    </section>
-    
-        <!-------footer-->
-    
-        <section class="footer">
-            <h4>About Us</h4>
-            <p>The National Environment Management Authority (NEMA) is established under the Environmental Management and Coordination Act (EMCA) No. 8 of 1999, as the principal instrument of government in the implementation of all policies relating to the environment.
-               The Authority became operational on 1st July 2002 following the merger of three government departments, namely: the National Environment Secretariat (NES), the Permanent Presidential Commission on Soil Conservation and Afforestation (PPCSCA), and the Department of Resource Surveys and Remote Sensing (DRSRS). However, following government restructuring in March 2003, DRSRS reverted to its departmental status under the then Ministry of Environment and Natural Resources (MENR).</p>
-               <div class="icons">
-                <i class="fa fa-facebook"></i>
-                <i class="fa fa-instagram"></i>
-                <i class="fa fa-twitter"></i>
-                <i class="fa fa-linkedin"></i>
-            </div>
-            </section>
-    
-    
-    
-    
-    
-    
-    
-    
-    <!------------------Javascript forr Toggle Menu---------->
-    <script>
-    
-    var navLinks = document.getElementById("navLinks");
-    
-    function showMenu(){
-        navLinks.style.right ="0";
-    }
-    function hideMenu(){
-        navLinks.style.right = "-200px";
-    }
-    </script>
-    
-    
+    <div class="blog-right">
+      <h3>Project Categories</h3>
+      <div>
+        <span>Water Security</span>
+        <span>3</span>
+      </div>
+      <div>
+        <span>Forest Reservation</span>
+        <span>10</span>
+      </div>
+      <div>
+        <span>Climate Ressilience</span>
+        <span>2</span>
+      </div>
+      <div>
+        <span>Garbage Disposal</span>
+        <span>15</span>
+      </div>
+      <div>
+        <span>Food Security</span>
+        <span>12</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-------footer-->
+
+<section class="footer">
+  <h4>About Us</h4>
+  <p>
+    The National Environment Management Authority (NEMA) is established under
+    the Environmental Management and Coordination Act (EMCA) No. 8 of 1999, as
+    the principal instrument of government in the implementation of all policies
+    relating to the environment. The Authority became operational on 1st July
+    2002 following the merger of three government departments, namely: the
+    National Environment Secretariat (NES), the Permanent Presidential
+    Commission on Soil Conservation and Afforestation (PPCSCA), and the
+    Department of Resource Surveys and Remote Sensing (DRSRS). However,
+    following government restructuring in March 2003, DRSRS reverted to its
+    departmental status under the then Ministry of Environment and Natural
+    Resources (MENR).
+  </p>
+  <div class="icons">
+    <i class="fa fa-facebook"></i>
+    <i class="fa fa-instagram"></i>
+    <i class="fa fa-twitter"></i>
+    <i class="fa fa-linkedin"></i>
+  </div>
+</section>
+
+<!------------------Javascript forr Toggle Menu---------->
+<script>
+  var navLinks = document.getElementById("navLinks");
+
+  function showMenu() {
+    navLinks.style.right = "0";
+  }
+  function hideMenu() {
+    navLinks.style.right = "-200px";
+  }
+</script>
 
 {% endblock body %}

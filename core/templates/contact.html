@@ -1,95 +1,107 @@
-{% extends 'base.html' %}
-
-{% block body %}
+{% extends 'base.html' %} {% block body %}
 
 <h1>Contact</h1>
 
 <section class="location">
-
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127643.95287064243!2d36.73865673662144!3d-1.246918318622457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f11bb2cb506e1%3A0x5f0bba0f403e31d7!2sNational%20Environmental%20Management%20Authority-Head%20Office!5e0!3m2!1sen!2ske!4v1670956187376!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127643.95287064243!2d36.73865673662144!3d-1.246918318622457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f11bb2cb506e1%3A0x5f0bba0f403e31d7!2sNational%20Environmental%20Management%20Authority-Head%20Office!5e0!3m2!1sen!2ske!4v1670956187376!5m2!1sen!2ske"
+    width="600"
+    height="450"
+    style="border:0;"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"
+  ></iframe>
 </section>
 
 <section class="contact-us">
-
-    <div class="row">
-        <div class="contact-col">
-            <div>
-                <i class="fa fa-home"></i>
-            <span>
-                <h5>Popo Road,Nema Building</h5>
-                <p>MRHQ+J28</p>
-            </span>
-            </div>
-            <div>
-                <i class="fa fa-phone"></i>
-            <span>
-                <h5>011009103</h5>
-                <p>Monday to Friday, 8AM to 5PM</p>
-            </span>
-            </div>
-            <div>
-                <i class="fa fa-envelope-o"></i>
-            <span>
-                <h5>nbiketia@gmail.com</h5>
-                <p>Email Us</p>
-            </span>
-            </div>
-        </div>
-        <div class="contact-col">
-            <form method="post">
-                {% csrf_token %}
-                <input type="text" name="name" placeholder="Enter your name" required>
-                <input type="email" name="email" placeholder="Enter Email address " required>
-                <input type="text" name="subject" placeholder="Enter your subject" required>
-                <textarea rows="8" name="message" placeholder="Message" required></textarea>
-                <button type="submit" class="hero-btn red-btn">Send Message</button>
-            </form>
-        </div>
-
+  <div class="row">
+    <div class="contact-col">
+      <div>
+        <i class="fa fa-home"></i>
+        <span>
+          <h5>Popo Road,Nema Building</h5>
+          <p>MRHQ+J28</p>
+        </span>
+      </div>
+      <div>
+        <i class="fa fa-phone"></i>
+        <span>
+          <h5>011009103</h5>
+          <p>Monday to Friday, 8AM to 5PM</p>
+        </span>
+      </div>
+      <div>
+        <i class="fa fa-envelope-o"></i>
+        <span>
+          <h5>nbiketia@gmail.com</h5>
+          <p>Email Us</p>
+        </span>
+      </div>
     </div>
-
-
+    <div class="contact-col">
+      <form method="post">
+        {% csrf_token %}
+        <input type="text" name="name" placeholder="Enter your name" required />
+        <input
+          type="email"
+          name="email"
+          placeholder="Enter Email address "
+          required
+        />
+        <input
+          type="text"
+          name="subject"
+          placeholder="Enter your subject"
+          required
+        />
+        <textarea
+          rows="8"
+          name="message"
+          placeholder="Message"
+          required
+        ></textarea>
+        <button type="submit" class="hero-btn red-btn">Send Message</button>
+      </form>
+    </div>
+  </div>
 </section>
 
+<!-------footer-->
 
-    <!-------footer-->
-
-    <section class="footer">
-        <h4>About Us</h4>
-        <p>The National Environment Management Authority (NEMA) is established under the Environmental Management and Coordination Act (EMCA) No. 8 of 1999, as the principal instrument of government in the implementation of all policies relating to the environment.
-           The Authority became operational on 1st July 2002 following the merger of three government departments, namely: the National Environment Secretariat (NES), the Permanent Presidential Commission on Soil Conservation and Afforestation (PPCSCA), and the Department of Resource Surveys and Remote Sensing (DRSRS). However, following government restructuring in March 2003, DRSRS reverted to its departmental status under the then Ministry of Environment and Natural Resources (MENR).</p>
-           <div class="icons">
-            <i class="fa fa-facebook"></i>
-            <i class="fa fa-instagram"></i>
-            <i class="fa fa-twitter"></i>
-            <i class="fa fa-linkedin"></i>
-        </div>
-        </section>
-
-
-
-
-
-
-
+<section class="footer">
+  <h4>About Us</h4>
+  <p>
+    The National Environment Management Authority (NEMA) is established under
+    the Environmental Management and Coordination Act (EMCA) No. 8 of 1999, as
+    the principal instrument of government in the implementation of all policies
+    relating to the environment. The Authority became operational on 1st July
+    2002 following the merger of three government departments, namely: the
+    National Environment Secretariat (NES), the Permanent Presidential
+    Commission on Soil Conservation and Afforestation (PPCSCA), and the
+    Department of Resource Surveys and Remote Sensing (DRSRS). However,
+    following government restructuring in March 2003, DRSRS reverted to its
+    departmental status under the then Ministry of Environment and Natural
+    Resources (MENR).
+  </p>
+  <div class="icons">
+    <i class="fa fa-facebook"></i>
+    <i class="fa fa-instagram"></i>
+    <i class="fa fa-twitter"></i>
+    <i class="fa fa-linkedin"></i>
+  </div>
+</section>
 
 <!------------------Javascript forr Toggle Menu---------->
 <script>
+  var navLinks = document.getElementById("navLinks");
 
-var navLinks = document.getElementById("navLinks");
-
-function showMenu(){
-    navLinks.style.right ="0";
-}
-function hideMenu(){
+  function showMenu() {
+    navLinks.style.right = "0";
+  }
+  function hideMenu() {
     navLinks.style.right = "-200px";
-}
+  }
 </script>
-
-
-
-
-
 
 {% endblock body %}
