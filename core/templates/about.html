@@ -1,57 +1,61 @@
-{% extends 'base.html' %}
-
-{% block body %}
+{% extends 'base.html' %} {% load static %} {% block body %}
 
 <h1>About</h1>
 
 <section class="about-us">
-    <div class="row">
-        <div class="about-col">
-            <h1>We make the world a better place</h1>
-            <p>The National Environment Management Authority of Kenya (NEMA) is a national entity located in Kenya, which was established in 2002 with the objectives of supervising and coordinating environmental activities and serving as the main national body to implement environmental policies in all sectors within the country.</p>
-            <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
-        </div>
-        <div class="about-col">
-            <img src="{% static img/DSC_1461_resized.jpg' %}">
-        </div>
+  <div class="row">
+    <div class="about-col">
+      <h1>We make the world a better place</h1>
+      <p>
+        The National Environment Management Authority of Kenya (NEMA) is a
+        national entity located in Kenya, which was established in 2002 with the
+        objectives of supervising and coordinating environmental activities and
+        serving as the main national body to implement environmental policies in
+        all sectors within the country.
+      </p>
+      <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
     </div>
+    <div class="about-col">
+      <img src="{% static img/DSC_1461_resized.jpg' %}" />
+    </div>
+  </div>
 </section>
-  
 
+<!-------footer-->
 
-    <!-------footer-->
-
-    <section class="footer">
-        <h4>About Us</h4>
-        <p>The National Environment Management Authority (NEMA) is established under the Environmental Management and Coordination Act (EMCA) No. 8 of 1999, as the principal instrument of government in the implementation of all policies relating to the environment.
-           The Authority became operational on 1st July 2002 following the merger of three government departments, namely: the National Environment Secretariat (NES), the Permanent Presidential Commission on Soil Conservation and Afforestation (PPCSCA), and the Department of Resource Surveys and Remote Sensing (DRSRS). However, following government restructuring in March 2003, DRSRS reverted to its departmental status under the then Ministry of Environment and Natural Resources (MENR).</p>
-           <div class="icons">
-            <i class="fa fa-facebook"></i>
-            <i class="fa fa-instagram"></i>
-            <i class="fa fa-twitter"></i>
-            <i class="fa fa-linkedin"></i>
-        </div>
-        </section>
-
-
-
-
-
-
-
+<section class="footer">
+  <h4>About Us</h4>
+  <p>
+    The National Environment Management Authority (NEMA) is established under
+    the Environmental Management and Coordination Act (EMCA) No. 8 of 1999, as
+    the principal instrument of government in the implementation of all policies
+    relating to the environment. The Authority became operational on 1st July
+    2002 following the merger of three government departments, namely: the
+    National Environment Secretariat (NES), the Permanent Presidential
+    Commission on Soil Conservation and Afforestation (PPCSCA), and the
+    Department of Resource Surveys and Remote Sensing (DRSRS). However,
+    following government restructuring in March 2003, DRSRS reverted to its
+    departmental status under the then Ministry of Environment and Natural
+    Resources (MENR).
+  </p>
+  <div class="icons">
+    <i class="fa fa-facebook"></i>
+    <i class="fa fa-instagram"></i>
+    <i class="fa fa-twitter"></i>
+    <i class="fa fa-linkedin"></i>
+  </div>
+</section>
 
 <!------------------Javascript forr Toggle Menu---------->
 <script>
+  var navLinks = document.getElementById("navLinks");
 
-var navLinks = document.getElementById("navLinks");
-
-function showMenu(){
-    navLinks.style.right ="0";
-}
-function hideMenu(){
+  function showMenu() {
+    navLinks.style.right = "0";
+  }
+  function hideMenu() {
     navLinks.style.right = "-200px";
-}
+  }
 </script>
-
 
 {% endblock body %}
